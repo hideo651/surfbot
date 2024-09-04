@@ -1,5 +1,4 @@
 import styles from "./Capa.module.css";
-import Foto from "../../assets/capa.jpg";
 
 const Capa = () => {
   function handleSubmit(event) {

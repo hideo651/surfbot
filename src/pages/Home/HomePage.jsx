@@ -1,4 +1,6 @@
+import Aulas from "../../components/Aula/Aulas";
 import Capa from "../../components/Capa/Capa";
+import Conteudo from "../../components/Conteudo/conteudo";
 import Header from "../../components/Header/Header";
 
 const HomePage = () => {
@@ -6,6 +8,8 @@ const HomePage = () => {
     <>
       <Header />
       <Capa />
+      <Conteudo />
+      <Aulas />
     </>
   );
 };

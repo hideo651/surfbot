@@ -1,0 +1,103 @@
+.section {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.conteudo span {
+  color: var(--cor-5);
+}
+
+.conteudo h2 {
+  font-size: 4.5rem;
+}
+
+.fotos {
+  position: relative;
+}
+
+.prancha {
+  height: 750px;
+}
+
+.prancha img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.mapa {
+  position: absolute;
+  width: 500px;
+  top: 560px;
+  left: 20px;
+}
+
+.localizacao {
+  margin-top: 100px;
+}
+
+.localizacao li:nth-child(1) {
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.localizacao li:nth-child(1)::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid red;
+}
+
+.localizacao li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.localizacao li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 3px;
+  background: var(--cor-5);
+}
+
+.localizacao p {
+  color: var(--cor-3);
+}
+
+.localizacao span {
+  color: black;
+  font-weight: bold;
+}
+
+.infos {
+  margin-top: 75px;
+  margin-bottom: 50px;
+  border-bottom: 2px solid var(--cor-2);
+  padding-bottom: 25px;
+}
+
+.infos li {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 25px;
+  margin-top: 25px;
+  border-top: 2px solid var(--cor-2);
+  font-size: 1.5rem;
+  color: var(--cor-3);
+}
+
+.conteudo p {
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+  color: var(--cor-3);
+}
