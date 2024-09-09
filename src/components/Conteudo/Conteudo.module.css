@@ -28,9 +28,13 @@
 
 .mapa {
   position: absolute;
-  width: 500px;
-  top: 560px;
-  left: 20px;
+  width: 95%;
+  top: calc(20% + 540px);
+  left: 50%; /* Define a posição inicial na metade do contêiner pai */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Move o elemento para a esquerda 50% de sua largura */
 }
 
 .localizacao {
@@ -100,4 +104,26 @@
   margin-bottom: 10px;
   font-size: 1.125rem;
   color: var(--cor-3);
+}
+
+@media (max-width: 1050px) {
+  .conteudo h2 {
+    font-size: 3.5rem;
+  }
+
+  .conteudo p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .conteudo p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    grid-template-columns: 1fr;
+  }
 }

@@ -7,10 +7,11 @@
 }
 
 .conteudo {
-  padding-top: 290px;
+  padding-top: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .conteudo h1 {
@@ -53,4 +54,15 @@
 
 .form button:focus {
   background: var(--cor-7);
+}
+
+@media (max-width: 800px) {
+  .conteudo {
+    flex-direction: column;
+    padding-top: 50px;
+  }
+
+  .form {
+    width: 100%;
+  }
 }

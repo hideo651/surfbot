@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
 import styles from "./CardsAula.module.css";
+import Icon from "../../assets/icon.svg?react";
 
 const CardsAula = () => {
   return (
     <ul className={styles.cards}>
       <li className={styles.aula}>
+        <div className={styles.icon}>
+          <Icon />
+        </div>
         <h3>INFANTIL</h3>
         <div className={styles.aulaInfo}>
           <p>Público entre 5 e 15 anos</p>
@@ -18,6 +22,10 @@ const CardsAula = () => {
         </Link>
       </li>
       <li className={styles.aula}>
+        <div className={styles.icon}>
+          <Icon />
+          <Icon />
+        </div>
         <h3>ADULTO</h3>
         <div className={styles.aulaInfo}>
           <p>Público entre 16 e 80 anos</p>
@@ -31,6 +39,11 @@ const CardsAula = () => {
         </Link>
       </li>
       <li className={styles.aula}>
+        <div className={styles.icon}>
+          <Icon />
+          <Icon />
+          <Icon />
+        </div>
         <h3>PROFISSIONAL</h3>
         <div className={styles.aulaInfo}>
           <p>Experiência de 3 anos no surf</p>

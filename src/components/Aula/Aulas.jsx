@@ -16,6 +16,12 @@ const Aulas = () => {
           </p>
         </div>
       </div>
+      <div className={styles.onda}>
+        <div className={styles.ondaTexto}>
+          <h2 className="font-01">“O surf liberta as ondas de uma vida.”</h2>
+          <p>Regis Pereira</p>
+        </div>
+      </div>
     </section>
   );
 };
