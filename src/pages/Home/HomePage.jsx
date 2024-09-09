@@ -2,6 +2,7 @@ import Aulas from "../../components/Aula/Aulas";
 import Capa from "../../components/Capa/Capa";
 import Contato from "../../components/Contato/Contato";
 import Conteudo from "../../components/Conteudo/conteudo";
+import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 
 const HomePage = () => {
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Conteudo />
       <Aulas />
       <Contato />
+      <Footer />
     </>
   );
 };

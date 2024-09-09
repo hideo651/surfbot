@@ -1,0 +1,17 @@
+.footer {
+  background: var(--cor-5);
+  color: var(--cor-1);
+  padding: 25px 0 25px 0;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.conteudo svg > * {
+  fill: var(--cor-1);
+}
