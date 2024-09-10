@@ -3,7 +3,7 @@ import styles from "./Aulas.module.css";
 
 const Aulas = () => {
   return (
-    <section className={`${styles.section}`}>
+    <section id="aula" className={`${styles.section}`}>
       <div className={`${styles.conteudo} container`}>
         <h2>Aulas</h2>
         <CardsAula />

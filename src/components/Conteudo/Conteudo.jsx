@@ -8,7 +8,7 @@ import Mapa from "../../assets/mapa.png";
 
 const Conteudo = () => {
   return (
-    <section className={`${styles.section} container`}>
+    <section id="praia" className={`${styles.section} container`}>
       <div className={styles.details}>
         <div className={styles.fotos}>
           <div className={styles.prancha}>
