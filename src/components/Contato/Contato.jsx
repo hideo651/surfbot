@@ -28,7 +28,7 @@ const Contato = () => {
   }, []);
 
   return (
-    <section className={`${styles.section} container`}>
+    <section id="contato" className={`${styles.section} container`}>
       <h2 className="font-01">Contato</h2>
       <div className={styles.conteudo}>
         <form onSubmit={handleSubmit}>

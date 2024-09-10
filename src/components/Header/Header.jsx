@@ -19,8 +19,6 @@ const Header = () => {
     }
   }, [local]);
 
-  console.log(page);
-
   return (
     <header className={`${styles.header}`}>
       <div className={styles.info}>
@@ -48,9 +46,15 @@ const Header = () => {
                 mobileMenu && styles.linksMobileActive
               }`}
             >
-              <li>Praia</li>
-              <li>Aula</li>
-              <li>Contato</li>
+              <li>
+                <a href="#praia">Praia</a>
+              </li>
+              <li>
+                <a href="#aula">Aula</a>
+              </li>
+              <li>
+                <a href="#contato">Contato</a>
+              </li>
               <li>
                 <Link to="/matricula">Matricule-se</Link>
               </li>
