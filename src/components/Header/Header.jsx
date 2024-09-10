@@ -19,6 +19,8 @@ const Header = () => {
     }
   }, [local]);
 
+  console.log(page);
+
   return (
     <header className={`${styles.header}`}>
       <div className={styles.info}>
@@ -31,7 +33,7 @@ const Header = () => {
           <Link to="/">
             <Logo />
           </Link>
-          {mobile && (
+          {mobile && page && (
             <button
               aria-label="Menu"
               onClick={() => setMobileMenu(!mobileMenu)}
