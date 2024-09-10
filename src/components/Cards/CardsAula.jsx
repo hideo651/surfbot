@@ -1,11 +1,32 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import styles from "./CardsAula.module.css";
 import Icon from "../../assets/icon.svg?react";
+import React from "react";
 
-const CardsAula = () => {
+const CardsAula = ({ aula }) => {
+  console.log(aula);
+
+  const [matricula, setMatricula] = React.useState(false);
+
+  React.useEffect(() => {
+    if (aula) {
+      setMatricula(true);
+    } else {
+      setMatricula(false);
+    }
+  }, []);
+
+  console.log(matricula);
   return (
     <ul className={styles.cards}>
-      <li className={styles.aula}>
+      <li
+        className={`${styles.aula} ${
+          matricula && aula === "infantil"
+            ? styles.aulaAtivo
+            : styles.aulaInativo
+        } ${matricula ? styles.matricula : styles.home}`}
+      >
         <div className={styles.icon}>
           <Icon />
         </div>
@@ -21,7 +42,11 @@ const CardsAula = () => {
           MATRICULE-SE <span>➜</span>
         </Link>
       </li>
-      <li className={styles.aula}>
+      <li
+        className={`${styles.aula} ${
+          matricula && aula === "adulto" ? "" : styles.aulaInativo
+        } ${matricula ? styles.matricula : styles.home}`}
+      >
         <div className={styles.icon}>
           <Icon />
           <Icon />
@@ -38,7 +63,13 @@ const CardsAula = () => {
           MATRICULE-SE <span>➜</span>
         </Link>
       </li>
-      <li className={styles.aula}>
+      <li
+        className={`${styles.aula} ${
+          matricula && aula === "profissional"
+            ? styles.aulaAtivo
+            : styles.aulaInativo
+        } ${matricula ? styles.matricula : styles.home}`}
+      >
         <div className={styles.icon}>
           <Icon />
           <Icon />

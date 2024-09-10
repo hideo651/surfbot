@@ -5,7 +5,6 @@ import styles from "./Contato.module.css";
 
 const Contato = () => {
   function handleSubmit(e) {
-    console.log("chamado");
     e.preventDefault();
   }
 
@@ -22,10 +21,8 @@ const Contato = () => {
 
     if (aberto && horas >= 6 && horas <= 14) {
       setFuncionamento(true);
-      console.log("Aberto");
     } else {
       setFuncionamento(false);
-      console.log("Fechado");
     }
     console.log(aberto);
   }, []);

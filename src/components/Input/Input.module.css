@@ -26,6 +26,8 @@
   font-size: 1rem;
   line-height: 1;
   padding-bottom: 0.5rem;
+  font-weight: bold;
+  color: var(--cor-3);
 }
 
 .error {

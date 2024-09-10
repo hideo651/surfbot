@@ -61,6 +61,9 @@
   margin-top: 50px;
 }
 
+.aulaInativo.matricula {
+  display: none;
+}
 .aula a {
   display: flex;
   background: var(--cor-3);
@@ -75,15 +78,5 @@
 
 .aula a:hover {
   background: var(--cor-2);
-  color: var(--cor-3);
+  color: var(--cor-8);
 }
-
-/* @media (max-width: 1150px) {
-  .cards {
-    justify-content: initial;
-  }
-  .aula {
-    width: 270px;
-    background: tomato;
-  }
-} */
