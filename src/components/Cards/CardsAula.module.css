@@ -1,0 +1,82 @@
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  overflow-x: auto; /* Permite rolagem horizontal */
+  white-space: nowrap; /* Evita quebra de linha dos itens flexíveis */
+  gap: 30px;
+  padding-top: 35px;
+}
+
+.aula {
+  background: var(--cor-1);
+  width: 370px;
+  padding: 50px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  width: 270px;
+  display: flex;
+  z-index: 1;
+  justify-content: center;
+  top: -20px;
+}
+
+.aula h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--cor-3);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.aulaInfo {
+  color: var(--cor-3);
+}
+
+.aulaInfo p {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.aulaInfo p::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid red;
+}
+
+.preco {
+  display: inline-block;
+  color: var(--cor-5);
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.aulaInativo.matricula {
+  display: none;
+}
+.aula a {
+  display: flex;
+  background: var(--cor-3);
+  color: var(--cor-1);
+  justify-content: space-around;
+  font-weight: bold;
+  padding: 5px 0 5px 0;
+  border-radius: 4px;
+  margin-top: 30px;
+  transition: 0.2s;
+}
+
+.aula a:hover {
+  background: var(--cor-2);
+  color: var(--cor-8);
+}
