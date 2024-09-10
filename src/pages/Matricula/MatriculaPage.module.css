@@ -1,4 +1,5 @@
 .section {
+  margin-bottom: 50px;
 }
 
 .section h1 {
@@ -10,8 +11,8 @@
 }
 
 .conteudo {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
   gap: 50px;
   margin-top: 50px;
 }
@@ -20,12 +21,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-}
-
-.plano {
-  background: var(--cor-2);
-  padding: 30px;
-  width: 430px;
 }
 
 .radio {
@@ -54,4 +49,98 @@
 
 .lista {
   display: flex;
+}
+
+.plano {
+  height: 580px;
+  background: var(--cor-2);
+  padding: 30px;
+  border-radius: 4px;
+}
+
+.pagamento h2 {
+  font-size: 1rem;
+  color: var(--cor-5);
+  margin-bottom: 50px;
+}
+
+.metodo {
+  display: flex;
+}
+
+.forma {
+  background: var(--cor-2);
+  padding: 10px;
+}
+
+.forma:nth-child(1) {
+  border-right: 2px solid var(--cor-1);
+}
+
+.data {
+  display: flex;
+  gap: 20px;
+}
+
+.data select {
+  background: var(--cor-2);
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: "Nunito";
+}
+
+.data label {
+  font-weight: bold;
+  color: var(--cor-3);
+}
+
+.data select:focus {
+  outline: none;
+}
+
+.mes {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.conteudo p {
+  color: var(--cor-3);
+  font-weight: bold;
+}
+
+.btnMatricula {
+  background: var(--cor-5);
+  color: var(--cor-1);
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+
+.btnMatricula:hover,
+.btnMatricula:focus {
+  outline: none;
+  background: #0467cc;
+}
+
+@media (max-width: 950px) {
+  .conteudo {
+    justify-items: center;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .plano {
+    padding: 5px;
+  }
 }

@@ -5,8 +5,12 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={`${styles.conteudo} container`}>
-        <p>Surfnet 2024 - Alguns direitos reservados</p>
-        <Icon />
+        <p>Surfbot 2024 - Alguns direitos reservados</p>
+
+        <a href="https://www.linkedin.com/in/ayrton-hideo-hirata-29aa4367/">
+          <p>Desenvolvido por Ayrton Hideo Hirata</p>
+          <Icon />
+        </a>
       </div>
     </footer>
   );

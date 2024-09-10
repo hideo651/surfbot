@@ -5,8 +5,6 @@ import Icon from "../../assets/icon.svg?react";
 import React from "react";
 
 const CardsAula = ({ aula }) => {
-  console.log(aula);
-
   const [matricula, setMatricula] = React.useState(false);
 
   React.useEffect(() => {
@@ -17,7 +15,6 @@ const CardsAula = ({ aula }) => {
     }
   }, []);
 
-  console.log(matricula);
   return (
     <ul className={styles.cards}>
       <li
@@ -38,9 +35,13 @@ const CardsAula = ({ aula }) => {
           <p>2 horas seguidas de aula</p>
         </div>
         <span className={styles.preco}>R$ 49,00 / Aula</span>
-        <Link to={"/matricula"}>
-          MATRICULE-SE <span>➜</span>
-        </Link>
+        {matricula ? (
+          <></>
+        ) : (
+          <Link to={"/matricula"}>
+            MATRICULE-SE <span>➜</span>
+          </Link>
+        )}
       </li>
       <li
         className={`${styles.aula} ${
@@ -59,9 +60,13 @@ const CardsAula = ({ aula }) => {
           <p>3 horas seguidas de aula</p>
         </div>
         <span className={styles.preco}>R$ 69,00 / Aula</span>
-        <Link to={"/matricula"}>
-          MATRICULE-SE <span>➜</span>
-        </Link>
+        {matricula ? (
+          <></>
+        ) : (
+          <Link to={"/matricula"}>
+            MATRICULE-SE <span>➜</span>
+          </Link>
+        )}
       </li>
       <li
         className={`${styles.aula} ${
@@ -83,9 +88,13 @@ const CardsAula = ({ aula }) => {
           <p>4 horas seguidas de aula</p>
         </div>
         <span className={styles.preco}>R$ 99,00 / Aula</span>
-        <Link to={"/matricula"}>
-          MATRICULE-SE <span>➜</span>
-        </Link>
+        {matricula ? (
+          <></>
+        ) : (
+          <Link to={"/matricula"}>
+            MATRICULE-SE <span>➜</span>
+          </Link>
+        )}
       </li>
     </ul>
   );
