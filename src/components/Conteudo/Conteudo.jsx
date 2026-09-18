@@ -39,7 +39,7 @@ const Conteudo = () => {
       </div>
       <div className={styles.conteudo}>
         <h2 className="font-01">
-          <span>Aulas</span> em uma das melhores prais do <span>Rio</span>.
+          <span>Aulas</span> em uma das melhores praias do <span>Rio</span>.
         </h2>
         <ul className={styles.infos}>
           <li>

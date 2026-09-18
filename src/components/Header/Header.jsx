@@ -46,16 +46,16 @@ const Header = () => {
                 mobileMenu && styles.linksMobileActive
               }`}
             >
-              <li>
+              <li onClick={() => setMobileMenu(!mobileMenu)}>
                 <a href="#praia">Praia</a>
               </li>
-              <li>
+              <li onClick={() => setMobileMenu(!mobileMenu)}>
                 <a href="#aula">Aula</a>
               </li>
-              <li>
+              <li onClick={() => setMobileMenu(!mobileMenu)}>
                 <a href="#contato">Contato</a>
               </li>
-              <li>
+              <li onClick={() => setMobileMenu(!mobileMenu)}>
                 <Link to="/matricula">Matricule-se</Link>
               </li>
             </ul>

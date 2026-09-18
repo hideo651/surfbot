@@ -1,0 +1,19 @@
+<svg width="300" height="100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text {
+      font-family: 'Arial', sans-serif;
+      font-size: 36px;
+      fill: #007BFF; /* Azul vibrante */
+      font-weight: bold;
+    }
+    .icon {
+      fill: #007BFF;
+    }
+  </style>
+  
+  <!-- Ícone: balão de fala -->
+  <path class="icon" d="M20,20 h40 a10,10 0 0,1 10,10 v20 a10,10 0 0,1 -10,10 h-15 l-10,10 v-10 h-15 a10,10 0 0,1 -10,-10 v-20 a10,10 0 0,1 10,-10 z"/>
+
+  <!-- Texto "Enquete" -->
+  <text x="80" y="55" class="text">Enquete</text>
+</svg>
